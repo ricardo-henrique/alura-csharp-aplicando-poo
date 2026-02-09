@@ -1,18 +1,15 @@
-﻿Music music1 = new Music();
+﻿Album QueensAlbum = new Album();
+QueensAlbum.Name = "A night at the opera";
 
-music1.Name = "castelo forte";
-music1.Artist = "HCC";
-music1.Duration = 274;
-music1.Available = true;
-Console.WriteLine(music1.Overview);
-
+Music music1 = new Music();
+music1.Name = "Love of my life";
+music1.Duration = 213;
 
 Music music2 = new Music();
-music2.Name = "Eduardo e Mônica";
-music2.Artist = "legião Urbana";
-music2.Duration = 258;
-music2.Available = false;
+music2.Name = "Bohemia Rhapsody";
+music2.Duration = 354;
 
+QueensAlbum.AddMusic(music1);
+QueensAlbum.AddMusic(music2);
 
-music1.DisplayTechnicalSpecification();
-music2.DisplayTechnicalSpecification();
+QueensAlbum.DisplayAlbumsMusic();
