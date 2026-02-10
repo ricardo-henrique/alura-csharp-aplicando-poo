@@ -1,15 +1,15 @@
-﻿Album QueensAlbum = new Album();
-QueensAlbum.Name = "A night at the opera";
+﻿Episode ep1 = new(1, "técnicas de falicitação", 45);
+ep1.addGuests("Maria");
+ep1.addGuests("Marcelo");
 
-Music music1 = new Music();
-music1.Name = "Love of my life";
-music1.Duration = 213;
 
-Music music2 = new Music();
-music2.Name = "Bohemia Rhapsody";
-music2.Duration = 354;
+Episode ep2 = new(2, "técnicas de aprendizado", 67);
+ep2.addGuests("Fernando");
+ep2.addGuests("Marcos");
+ep2.addGuests("Flavia");
 
-QueensAlbum.AddMusic(music1);
-QueensAlbum.AddMusic(music2);
 
-QueensAlbum.DisplayAlbumsMusic();
+Podcast podcast = new("Podcast especial", "Daniel");
+podcast.AddEpisode(ep1);
+podcast.AddEpisode(ep2);
+podcast.DisplayDetails();
